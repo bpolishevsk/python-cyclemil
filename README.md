@@ -95,21 +95,3 @@ every single one of the containers.  A slimmer, but still
 functional, set is
 
     docker-compose up web worker db queue
-
-TODO
-----
-
-### Task/workflow infrastructure
-
-*   Demo task that runs subtasks in a group.
-*   Demo task that runs subtasks in a chord.
-*   Error handling should update workflow to "failed" state should
-    an error occur anywhere in the canvas.  Test this thoroughly.
-*   Can on_error even have access to workflow_id?  Not sure.
-*   Ability to cancel a workflow?  Set a flag, workflow tasks
-    check this flag before doing their admin, raise exception.
-
-### Aspirational
-
-*   API endpoints for workflows
-*   react app to use API, display the workflow status, refresh
